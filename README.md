@@ -19,14 +19,14 @@ BBR
   
 老系统开启BBR
 - CentOS 6.0/7.0, Debian 8, Ubuntu 16.04/16.10 等再老一点的系统建议为升级至最新版，如果实在不想升级，可以升级Linux内核版本，参考秋水逸冰的脚本：
-```
-wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-```
+  ```
+  wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+  ```
 
-安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
-```
-lsmod | grep bbr
-```
+  安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
+  ```
+  lsmod | grep bbr
+  ```
 
 注意
 - BBR只针对TCP进行加速，对UDP不奏效。
